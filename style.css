@@ -22,13 +22,18 @@
 
 body {
     font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
 .background {
     position: absolute;
     width: 450px;
-    height: 650px;
+    height: 550px;
     top: 0;
     left: -60px;
     background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
@@ -61,7 +66,7 @@ body {
 }
 
 .phone {
-    width: 350px;
+    width: 300px;
     min-height: 600px;
     position: relative;
     background: var(--Gray-100-app-background);
@@ -119,7 +124,7 @@ body {
 }
 
 .avatar h3 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
     color: hsl(0, 100%, 100%, .8);
 }
@@ -127,7 +132,7 @@ body {
 .avatar p {
     color: var(--Gray-300-placeholder-text);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .avatar-img {
@@ -135,15 +140,13 @@ body {
     width: 100%;
 }
 
-
-
 .chat-con {
     margin-top: 10px;
     padding: 1rem;
 }
 
 .visitor {
-    width: 250px;
+    width: 160px;
     background: var(--Gray-100-app-background);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     background: hsl(0, 100%, 100%, .1);
@@ -151,11 +154,12 @@ body {
     border-radius: 10px;
     color: var(--Purple-600-chat-on-the-left);
     font-weight: 500;
+    font-size: 10px;
     margin-bottom: 10px;
 }
 
 .img-con img {
-    width: 70px;
+    width: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
@@ -174,18 +178,20 @@ body {
 .host {
     background: var(--White);
     padding: 10px;
-    max-width: 250px;
+    max-width: 160px;
     color: var(--Gray-500-chat-on-the-right-paragraph);
+    font-size: 8px;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
 }
 
 .price-con {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 280px;
+    width: 170px;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -200,14 +206,15 @@ body {
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     border: 2px solid var(--Pink-400-radio-button-outline);
 }
 
 .price-con p {
     color: var(--Purple-300-sub-heading-at-the-top-of-the-app-UI);
+    font-size: 8px;
     font-weight: 500;
 
 }
@@ -215,6 +222,7 @@ body {
 .price-con h2 {
     font-weight: 700;
     color: hsl(0, 100%, 100%, .8);
+    font-size: 12px;
 }
 
 .type-con {
@@ -232,15 +240,15 @@ input {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 8px;
     /* height: 100%; */
 }
 
 
 
 button {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     border: none;
     background: var(--Purple-950-submit-button-background);
     border-radius: 50%;
