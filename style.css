@@ -67,7 +67,7 @@ body {
 
 .phone {
     width: 300px;
-    min-height: 600px;
+    min-height: 500px;
     position: relative;
     background: var(--Gray-100-app-background);
     border-radius: 30px;
@@ -99,9 +99,8 @@ body {
     align-items: center;
     background: var(--gradient-color);
     border-radius: 1rem;
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    padding: 2rem 1rem 1.5rem;
+    padding: 1.8rem 1rem 10px;
 }
 
 .avatar {
@@ -115,7 +114,6 @@ body {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-
     object-fit: contain;
 }
 
@@ -141,7 +139,7 @@ body {
 }
 
 .chat-con {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 1rem;
 }
 
@@ -149,13 +147,13 @@ body {
     width: 160px;
     background: var(--Gray-100-app-background);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    background: hsl(0, 100%, 100%, .1);
-    padding: 10px;
+    background:#eee5f4;
+    padding: 8px;
     border-radius: 10px;
     color: var(--Purple-600-chat-on-the-left);
     font-weight: 500;
     font-size: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .img-con img {
@@ -166,8 +164,8 @@ body {
 
 .img-con {
     text-align: right;
-    margin-top: 1rem;
-    margin-bottom: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .host-con {
@@ -181,7 +179,7 @@ body {
     max-width: 160px;
     color: var(--Gray-500-chat-on-the-right-paragraph);
     font-size: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     font-weight: 500;
@@ -194,7 +192,7 @@ body {
     width: 170px;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     background: var(--gradient-color);
 }
@@ -231,12 +229,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 7px;
     border-radius: 1rem;
 }
 
 input {
-    padding: 8px 0;
+    padding: 5px 0;
     width: 100%;
     border: none;
     outline: none;
