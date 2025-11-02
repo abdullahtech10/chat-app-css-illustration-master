@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Gray-100-app-background: hsl(270, 20%, 96%);
+    --Purple-950-submit-button-background: hsl(271, 36%, 24%);
+    --Pink-400-radio-button-outline: hsl(289, 100%, 72%);
+    --Purple-300-sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+    --Purple-600-chat-on-the-left: hsl(276, 55%, 52%);
+    --Gray-500-chat-on-the-right-paragraph: hsl(270, 7%, 64%);
+    --Gray-300-placeholder-text: hsl(206, 6%, 79%);
+    --Purple-950-main-heading: hsl(271, 36%, 24%);
+    --gradient-color: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+
+}
+
+.background {
+    position: absolute;
+    width: 450px;
+    height: 650px;
+    top: 0;
+    left: -60px;
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 150px;
+    z-index: -1;
+}
+
+.phone-con {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Purple-950-submit-button-background);
+    margin-bottom: 10px;
+}
+
+.booking p {
+    color: var(--Gray-300-placeholder-text);
+    line-height: 1.5;
+}
+
+.booking {
+    width: 400px;
+}
+
+.phone {
+    width: 350px;
+    min-height: 600px;
+    position: relative;
+    background: var(--Gray-100-app-background);
+    border-radius: 30px;
+    border: 10px solid var(--White);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* margin: 0 auto; */
+}
+
+.notch {
+    width: 150px;
+    height: 20px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    /* background: black; */
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gradient-color);
+    border-radius: 1rem;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1rem 1.5rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.border {
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+.invert {
+    filter: brightness(0) invert(1);
+}
+
+.avatar h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(0, 100%, 100%, .8);
+}
+
+.avatar p {
+    color: var(--Gray-300-placeholder-text);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+
+.chat-con {
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+.visitor {
+    width: 250px;
+    background: var(--Gray-100-app-background);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: hsl(0, 100%, 100%, .1);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--Purple-600-chat-on-the-left);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.img-con img {
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.img-con {
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+.host-con {
+    display: flex;
+    justify-content: end;
+}
+
+.host {
+    background: var(--White);
+    padding: 10px;
+    max-width: 250px;
+    color: var(--Gray-500-chat-on-the-right-paragraph);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.price-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: var(--gradient-color);
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--Pink-400-radio-button-outline);
+}
+
+.price-con p {
+    color: var(--Purple-300-sub-heading-at-the-top-of-the-app-UI);
+    font-weight: 500;
+
+}
+
+.price-con h2 {
+    font-weight: 700;
+    color: hsl(0, 100%, 100%, .8);
+}
+
+.type-con {
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+input {
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    /* height: 100%; */
+}
+
+
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--Purple-950-submit-button-background);
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:900px) {
+    .phone-con {
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .booking{
+        width: 100%;
+        text-align: center;
+    }
+
+    .background{
+        width: 250px;
+    }
+
+
+
+}
