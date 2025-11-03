@@ -1,0 +1,10 @@
+const timeline = gsap.timeline({defaults: {duration: 1.5}})
+timeline
+.from('.one', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.two', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.three', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.four', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.five', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.six', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.seven', {opacity: 0, ease: 'ease', y: '-20px'})
+.from('.eight', {opacity: 0, ease: 'ease', y: '-20px'})
